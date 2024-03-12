@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gym System Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="../css/fullcalendar.css" />
+<link rel="stylesheet" href="../css/matrix-style.css" />
+<link rel="stylesheet" href="../css/matrix-media.css" />
+<link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
+<link href="../font-awesome/css/all.css" rel="stylesheet" />
+<link rel="stylesheet" href="../css/jquery.gritter.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="">Perfect Gym Admin</a></h1>
+</div>
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="payment.html">Payments</a> <a href="#" class="current">Invoice</a> </div>
+    <h1>Payment Form</h1>
+  </div>
+  
+  
+  <div class="container-fluid" style="margin-top:-38px;">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="fas fa-money"></i> </span>
+            <h5>Payments</h5>
+          </div>
+          <div class="widget-content">
+            <div class="row-fluid">
+              <div class="span5">
+                <table class="">
+                  <tbody>
+                  <tr>
+                      <td><img src="../img/gym-logo.png" alt="Gym Logo" width="175"></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Perfect GYM Club</h4></td>
+                    </tr>
+                    <tr>
+                      <td>5021  Wetzel Lane, Williamsburg</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Tel: 231-267-6011</td>
+                    </tr>
+                    <tr>
+                      <td >Email: support@perfectgym.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+			  
+			  
+              <div class="span7">
+                <table class="table table-bordered table-invoice">
+				
+                  <tbody>
+				  <form action="userpay.html" method="POST">
+                    <tr>
+                    <tr>
+                      <td class="width30">Member's Fullname:</td>
+                      <input type="hidden" name="fullname" value="">
+                      <td class="width70"><strong>fullname</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Service:</td>
+                      <input type="hidden" name="services" value="">
+                      <td><strong>services</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Amount Per Month:</td>
+                      <td><input id="amount" type="number" name="amount" value='' /></td>
+                    </tr>
+
+                    <input type="hidden" name="paid_date" value="">
+					
+                  <td class="width30">Plan:</td>
+                    <td class="width70">
+					<div class="controls">
+                <select name="plan" required="required" id="select">
+                  <option value="1" selected="selected" >One Month</option>
+                  <option value="3">Three Month</option>
+                  <option value="6">Six Month</option>
+                  <option value="12">One Year</option>
+                  <option value="0">None-Expired</option>
+
+                </select>
+              </div>
+
+             
+			  
+                      </td>
+					  
+					  <tr>
+                     
+                    </tr>
+                  <td class="width30">Member's Status:</td>
+                    <td class="width70">
+					<div class="controls">
+                <select name="status" required="required" id="select">
+                  <option value="Active" selected="selected" >Active</option>
+                  <option value="Expired">Expired</option>
+
+                </select>
+              </div>
+			  
+
+                      </td>
+                  </tr>
+                    </tbody>
+                  
+                </table>
+              </div>
+			  
+			  
+            </div> <!-- row-fluid ends here -->
+			
+			
+            <div class="row-fluid">
+              <div class="span12">
+                
+				
+				<hr>
+                <div class="text-center">
+                  <!-- user's ID is hidden here -->
+
+             <input type="hidden" name="id" value="">
+      
+                  <button class="btn btn-success btn-large" type="SUBMIT" href="">Make Payment</button> 
+				</div>
+				  
+				  </form>
+              </div><!-- span12 ends here -->
+            </div><!-- row-fluid ends here -->
+			
+      <?html
+}
+      ?>
+          </div><!-- widget-content ends here -->
+		  
+		  
+        </div><!-- widget-box ends here -->
+      </div><!-- span12 ends here -->
+    </div> <!-- row-fluid ends here -->
+  </div> <!-- container-fluid ends here -->
+</div> <!-- div id content ends here -->
+
+
+
+<!--end-main-container-part-->
+
+<!--Footer-part-->
+
+
+<style>
+#footer {
+  color: white;
+}
+</style>
+
+<!--end-Footer-part-->
+
+</body>
+</html>

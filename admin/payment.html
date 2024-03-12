@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gym System Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="../css/fullcalendar.css" />
+<link rel="stylesheet" href="../css/matrix-style.css" />
+<link rel="stylesheet" href="../css/matrix-media.css" />
+<link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
+<link href="../font-awesome/css/all.css" rel="stylesheet" />
+<link rel="stylesheet" href="../css/jquery.gritter.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="header">
+  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+</div>
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="payment.htmlindex.html" class="current">Payments</a> </div>
+    <h1 class="text-center">Registered Member's Payment <i class="fas fa-group"></i></h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+
+      <div class='widget-box'>
+          <div class='widget-title'> <span class='icon'> <i class='fas fa-th'></i> </span>
+            <h5>Member's Payment table</h5>
+            <form id="custom-search-form" role="search" method="POST" action="search-result.htmlindex.html" class="form-search form-horizontal pull-right">
+                <div class="input-append span12">
+                    <input type="text" class="search-query" placeholder="Search" name="search" required>
+                    <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+          </div>
+          
+          <div class='widget-content nopadding'>
+<table class='table table-bordered data-table table-hover'>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Member</th>
+                  <th>Last Payment Date</th>
+                  <th>Amount</th>
+                  <th>Choosen Service</th>
+                  <th>Plan</th>
+                  <th>Action</th>
+                  <th>Remind</th>
+                </tr>
+              </thead>
+            
+            <tbody> 
+               
+                <td><div class='text-center'>cnt</div></td>
+                <td><div class='text-center'>row['fullname</div></td>
+                <td><div class='text-center'></div></td>
+                
+                <td><div class='text-center'></div></td>
+                <td><div class='text-center'></div></td>
+                <td><div class='text-center'></div></td>
+                <td><div class='text-center'><a href='user-payment.htmlindex.html'><button class='btn btn-success btn'><i class='fas fa-dollar-sign'></i> Make Payment</button></a></div></td>
+                <td><div class='text-center'><a href='sendReminder.htmlindex.html'><button class='btn btn-danger btn'>Alert</button></a></div></td>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+   
+		
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+#footer {
+  color: white;
+}
+</style>
+<!--end-Footer-part-->
+
+<style>
+    #custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+</style>
+
+
+
+</body>
+</html>
