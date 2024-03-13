@@ -19,24 +19,23 @@
 
 </head>
 <body>
-
   
-  
-  <div id="user-nav" class="navbar navbar-inverse">
+<div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav right">
       <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="fas fa-user-circle"></i>  <span class="text">Welcome Admin</span><b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href=".html"><i class="fas fa-key"></i> Log Out</a></li>
+          <li><a href="C:\Users\Ismet\Desktop\Gym-System-updated\Gym-System\index.html"><i class="fas fa-key"></i> Log Out</a></li>
         </ul>
       </li>
       
-      <li class=""><a title="" href="C:\Users\Ismet\Desktop\Gym-System-updated\Gym-System\staff\index.html"><i class="fas fa-power-off"></i> <span class="text">Logout</span></a></li>
+      <li class=""><a title="" href="C:\Users\Ismet\Desktop\Gym-System-updated\Gym-System\index.html"><i class="fas fa-power-off"></i> <span class="text">Logout</span></a></li>
     </ul>
-  </div>
+</div>
 <!--Header-part-->
 <div id="header">
   <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
 </div>
+
 <div id="sidebar">
   <a href="#" class="visible-phone">
     <i class="fas fa-home"></i> Dashboard
@@ -50,7 +49,6 @@
     <li class="submenu">
       <a href="#">
         <i class="fas fa-users"></i> Manage Members
-        <span class="label label-important">Member Count</span>
       </a>
       <ul>
         <li><a href="members.html"><i class="fas fa-arrow-right"></i> List All Members</a></li>
@@ -62,7 +60,6 @@
     <li class="submenu">
       <a href="#">
         <i class="fas fa-dumbbell"></i> Gym Equipment
-        <span class="label label-important">Equipment Count</span>
       </a>
       <ul>
         <li><a href="equipment.html"><i class="fas fa-arrow-right"></i> List Gym Equipment</a></li>
@@ -98,17 +95,11 @@
   </ul>
 </div>
 
-
-
-<!--main-container-part-->
 <div id="content">
-<!--breadcrumbs-->
   <div id="content-header">
     <div id="breadcrumb"> <a href="index.html" title="You're right here" class="tip-bottom"><i class="fa fa-home"></i> Home</a></div>
   </div>
-<!--End-breadcrumbs-->
 
-<!--Action boxes-->
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
@@ -134,18 +125,15 @@
             </div>
             <div class="span4">
               <ul class="site-stats">
-                <li class="bg_lh"><i class="fas fa-users"></i> <strong><?html include 'dashboard-usercount.html</strong> <small>Total Members</small></li>
-                <li class="bg_lg"><i class="fas fa-user-clock"></i> <strong><?html include 'actions/dashboard-staff-count.html</strong> <small>Staff Users</small></li>
-                <li class="bg_ls"><i class="fas fa-dumbbell"></i> <strong><?html include 'actions/count-equipments.html</strong> <small>Available Equipments</small></li>
-                <li class="bg_ly"><i class="fas fa-file-invoice-dollar"></i> <strong>$<?html include 'actions/total-exp.html</strong> <small>Total Expenses</small></li>
-                <li class="bg_lr"><i class="fas fa-user-ninja"></i> <strong><?html include 'actions/count-trainers.html</strong> <small>Active Gym Trainers</small></li>
-                <li class="bg_lb"><i class="fas fa-calendar-check"></i> <strong><?html include 'actions/count-attendance.html</strong> <small>Present Members</small></li>
+                <li class="bg_lh"><a href="members.html"><i class="fas fa-users"></i> <strong><?html include 'dashboard-usercount.html</strong> <small>Total Members</small></a></li>
+                <li class="bg_lg"><a href="staffs.html"><i class="fas fa-user-clock"></i> <strong><?html include 'actions/dashboard-staff-count.html</strong><small>Staff Users</small></a></li>
+                <li class="bg_ls"><a href="edit-equipment.html"><i class="fas fa-dumbbell"></i> <strong><?html include 'actions/count-equipments.html</strong> <small>Available Equipments</small></a></li>
               </ul>
             </div>
           </div>
         </div>
-      </div><!-- Visit codeastro.com for more projects -->
-    </div><!-- End of row-fluid -->
+      </div>
+    </div>
 
     <div class="row-fluid">
       <div class="widget-box">
@@ -195,8 +183,6 @@
       </div>
       </div>
 	
-<!--End-Chart-box--> <!-- Visit codeastro.com for more projects -->
-    <!-- <hr/> -->
     <div class="row-fluid">
       <div class="span6">
         <div class="widget-box">
@@ -210,8 +196,8 @@
               
                   <div class='user-thumb'> <img width='70' height='40' alt='User' src='../img/demo/av1.jpg'> </div>
                   <div class='article-post'> 
-                  <span class='user-info'> By: System Administrator / Date: ".$row['date']." </span>
-                  <p><a href='#'>".$row['message']."</a> </p>
+                  <span class='user-info'> By: System Administrator / Date: date </span>
+                  <p><a href='#'>message</a> </p>
                  
 
                 </div>
@@ -221,7 +207,7 @@
               </li>
             </ul>
           </div>
-        </div><!-- Visit codeastro.com for more projects -->
+        </div>
        
          
       </div>
